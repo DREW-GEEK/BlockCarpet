@@ -66,9 +66,9 @@ public class MainActivity extends AppCompatActivity {
         RadioButton rb1 = (RadioButton) findViewById(R.id.radioButton);
         rb1.setText("Rojo");
         RadioButton rb2 = (RadioButton) findViewById(R.id.radioButton2);
-        rb1.setText("Verde");
+        rb2.setText("Verde");
         RadioButton rb3 = (RadioButton) findViewById(R.id.radioButton3);
-        rb1.setText("Azul");
+        rb3.setText("Azul");
 
         rb1.setChecked(false);
         rb2.setChecked(true);
