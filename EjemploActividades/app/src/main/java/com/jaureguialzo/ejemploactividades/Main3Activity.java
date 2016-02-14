@@ -26,12 +26,15 @@ public class Main3Activity extends AppCompatActivity {
             }
         });
 
+        // Recoger el dato que nos llega en el Intent
         int dato = 0;
+
         Bundle extras = getIntent().getExtras();
-        if (extras != null) {
+        if (extras != null) {   // Hay que asegurarse de que existe
             dato = extras.getInt("DATO");
         }
 
+        // Mostramos el dato en el interfaz
         TextView tv = (TextView) findViewById(R.id.textView);
         tv.setText("El valor recibido es: "+dato);
 

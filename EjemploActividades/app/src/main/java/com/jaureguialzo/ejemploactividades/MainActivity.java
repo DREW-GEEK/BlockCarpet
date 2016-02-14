@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Abrir una nueva actividad mediante un Intent
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Abrir una nueva actividad, pasando un valor en el Intent
         findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,8 +46,13 @@ public class MainActivity extends AppCompatActivity {
                 Random r = new Random();
                 int n = r.nextInt(100);
 
+                // Crear el Intent
                 Intent i = new Intent(getApplicationContext(), Main3Activity.class);
+
+                // Cargar datos en el Intent
                 i.putExtra("DATO", n);
+
+                // Arrancar la actividad
                 startActivity(i);
             }
         });
