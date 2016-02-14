@@ -35,16 +35,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // TextView - Etiquetas
+
+        // Obtener referencias a los controles del Layout
         TextView tv1 = (TextView) findViewById(R.id.textView);
         TextView tv2 = (TextView) findViewById(R.id.textView2);
         TextView tv3 = (TextView) findViewById(R.id.textView3);
 
+        // Modificar el texto de las etiquetas
         tv1.setText("Hola");
         tv2.setText("¿Qué tal?");
         tv3.setText("¯\\_(ツ)_/¯");    // https://textfac.es/
 
+        // Button - Botones
+
         Button bt1 = (Button) findViewById(R.id.button);
         bt1.setText("¡Púlsame!");
+
+        // Añadir un manejador de evento para el OnClick()
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // RadioButton - Selección
+        // Si se agrupan en un RadioGroup en el layout, se vuelven excluyentes entre sí
+
         RadioButton rb1 = (RadioButton) findViewById(R.id.radioButton);
         rb1.setText("Rojo");
         RadioButton rb2 = (RadioButton) findViewById(R.id.radioButton2);
@@ -70,9 +81,12 @@ public class MainActivity extends AppCompatActivity {
         RadioButton rb3 = (RadioButton) findViewById(R.id.radioButton3);
         rb3.setText("Azul");
 
+        // Cambiar el valor de la propiedad checked (seleccionado)
         rb1.setChecked(false);
         rb2.setChecked(true);
         rb3.setChecked(false);
+
+        // CheckBox - Selección múltiple
 
         CheckBox cb1 = (CheckBox) findViewById(R.id.checkBox);
         cb1.setText("Blanco");
@@ -81,11 +95,16 @@ public class MainActivity extends AppCompatActivity {
         cb2.setText("Negro");
         cb2.setChecked(false);
 
+        // EditText - Cuadros de texto
+
         EditText et1 = (EditText) findViewById(R.id.editText);
         EditText et2 = (EditText) findViewById(R.id.editText2);
 
+        // Switch - Interruptor de dos estados
+
         Switch sw1 = (Switch) findViewById(R.id.switch1);
 
+        // Evento que se ejecuta al cambiar el estado del interruptor
         sw1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
