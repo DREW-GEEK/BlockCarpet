@@ -18,3 +18,6 @@ Aplicación con multiples actividades y uso de Intent para pasar datos de una a 
 
 Aplicación que demuestra como funciona el Spinner usando tres adaptadores diferentes: un recurso XML, un array de String y una lista de objetos Java con carga diferida o *lazy loading*.
 
+## EjemploAsyncTask
+
+Aplicación que consume el servicio web de [TimeAPI](http://www.timeapi.org) para mostrar la [hora UTC](http://www.timeapi.org/utc/now), usando una tarea en segundo plano.
